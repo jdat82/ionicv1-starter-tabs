@@ -1,0 +1,56 @@
+doctype html
+html
+
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width')
+        meta(http-equiv='Content-Security-Policy', content="@@csp")
+
+        title Learning IONIC
+
+        // I'm not concatenating vendors to ease debugging without source maps.
+        // In a cordova app, we can afford it.
+        link(href='css/app.css', rel='stylesheet')
+
+    body
+
+        ion-nav-bar.bar-assertive.has-tabs-top
+            ion-nav-back-button
+            ion-nav-title First screen
+
+        ion-nav-view
+
+        scroll-top
+
+        // cordova script (this will be a 404 during development)
+        script(src='cordova.js')
+
+        // I'm not concatenating vendors to ease debugging without source maps.
+        // In a cordova app, we can afford it.
+        script(src='js/lodash.js')
+        script(src='js/ionic.js')
+        script(src='js/angular.js')
+        script(src='js/angular-animate.js')
+        script(src='js/angular-sanitize.js')
+        script(src='js/angular-ui-router.js')
+        script(src='js/ionic-angular.js')
+        script(src='js/angular-local-storage.js')
+        script(src='js/angular-cache.js')
+        script(src='js/restangular.js')
+        script(src='js/imgcache.js')
+        script(src='js/angular-imgcache.js')
+        script(src='@@ngCordovaScript')
+
+
+        script(src='js/templates.js')
+        script(src='js/app.js')
+
+
+        script(type='text/javascript').
+            document.addEventListener('deviceready', function () {
+                console.info('CORDOVA READY');
+            }, false);
+            window.ionic.Platform.ready(function () {
+                console.info('IONIC READY');
+                angular.bootstrap(document, ['app'], {strictDi: true});
+            });

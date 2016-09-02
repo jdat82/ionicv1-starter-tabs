@@ -1,0 +1,103 @@
+/* ----------------------------------------------------------------------------------------------------------------------------------------
+To customize the look and feel of Ionic, you can override the variables defined
+in ionic's _variables.scss file.
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "fonts";
+$base-background-color: #DDD;
+$modal-bg-color: $base-background-color;
+$dark: #333;
+
+// Override default font family
+//$font-family-sans-serif:          "Roboto", "Segoe UI", "Arial", sans-serif;
+//$font-family-light-sans-serif:    "Roboto-Light", "Segoe UI-Light", "Arial-Light", sans-serif-light;
+
+// Remove border under tabs
+$tabs-striped-border-width: 0px;
+
+// Alert popup override
+$popup-width: 300px;
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------
+Include ionic sass files.
+*/
+@import "../vendor/ionic/scss/ionic";
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------
+CSS overrides.
+*/
+
+// Useless background.
+.loading-container .loading {
+    background-color: transparent;
+}
+
+// All buttons should handle long text overflowing.
+.button {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+// Bugfix for Android
+// Starting at 4 tabs, there is a line between title and tabs bar.
+.tabs-top.tabs-striped .tab-item.tab-item-active,
+.tabs-top.tabs-striped .tab-item.activated {
+    margin-top: 0;
+}
+
+// Alert popup override
+.alert-popup {
+    .popup-title{
+        font-size: 1.2rem;
+        text-align: left;
+        font-weight: bold;
+    }
+    .popup-body {
+        font-size: 1rem;
+    }
+}
+
+// Slide from left to right
+// Used for modals
+.slide-in-right {
+    transform: translate3d(100%, 0, 0);
+    will-change: transform;
+}
+.slide-in-right.ng-enter,
+.slide-in-right > .ng-enter {
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    transition-duration: 250ms;
+}
+.no-animation .slide-in-right.ng-enter,
+.no-animation .slide-in-right > .ng-enter {
+    transition: none;
+}
+.slide-in-right.ng-enter-active,
+.slide-in-right > .ng-enter-active {
+    transform: translate3d(0, 0, 0);
+}
+.slide-in-right.ng-leave,
+.slide-in-right > .ng-leave {
+    transition-property: transform;
+    transition-timing-function: ease-in;
+    transition-duration: 200ms;
+}
+.no-animation .slide-in-right.ng-leave,
+.no-animation .slide-in-right > .ng-leave {
+    transition: none;
+}
+
+.card {
+    // #perfmatters
+    box-shadow: none;
+    .item--full{
+        padding: 0;
+    }
+}

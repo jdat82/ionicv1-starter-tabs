@@ -1,0 +1,55 @@
+# Default build
+default:
+    - newdev
+
+
+
+# Build whole project for development
+dev:
+    - clean:build
+    - replace
+    - jshint:dev
+    - jscs
+    - sass_compile_imports
+    - sass
+    - postcss
+    - copy
+    - jade:index
+    - html2js:dev
+    - ngAnnotate
+
+
+# Same as dev but build only what changed
+newdev:
+    - newer:replace
+    - newer:jshint:dev
+    - newer:jscs
+    - sass_compile_imports
+    - sass
+    - newer:postcss
+    - newer:copy
+    - newer:jade:index
+    - html2js:dev
+    - ngAnnotate
+
+
+
+# Distribution build: same as dev + uglify
+dist:
+    - clean:build
+    - replace
+    - jshint:dist
+    - jscs
+    - sass_compile_imports
+    - sass
+    - postcss
+    - copy
+    - jade:index
+    - html2js:dist
+    - ngAnnotate
+    - uglify
+
+
+
+
+

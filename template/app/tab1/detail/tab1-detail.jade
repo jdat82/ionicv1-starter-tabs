@@ -1,0 +1,6 @@
+ion-modal-view.tab1-detail(ng-controller='Tab1DetailController as vm')
+    ion-header-bar.bar-assertive
+        back-button(ng-click='vm.remove()')
+        h1.title Detail modal
+    ion-content
+        h2 {{vm.item.name}}

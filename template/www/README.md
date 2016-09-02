@@ -1,0 +1,1 @@
+A valid cordova project must have at least an empty `www` folder.

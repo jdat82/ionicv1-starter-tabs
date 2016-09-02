@@ -1,0 +1,44 @@
+{
+    "eqeqeq": true,
+    "forin": true,
+    "freeze": true,
+    "futurehostile": true,
+    "maxcomplexity": 12,
+    "maxdepth": 5,
+    "maxparams": 20,
+    "maxstatements": 200,
+    "noarg": true,
+    "nonbsp": true,
+    "undef": true,
+    "unused": true,
+    "latedef": "nofunc",
+    "validthis": true,
+    "multistr": true,
+
+    "eqnull": true,
+    "expr": true,
+    "lastsemic": true,
+
+    "browser": true,
+    "jasmine": true,
+    "jquery": true,
+    "node": true,
+
+    "globals": {
+        "angular": false,
+        "dump": false,
+        "expect": false,
+        "inject": false,
+        "module": false,
+        "spyOn": false,
+        "cordova": false,
+        "StatusBar": false,
+        "_": false,
+        "ionic": false,
+        "H": false,
+        "readJSON": false,
+        "fixturesPath": true,
+        "ImgCache": false,
+        "resolveLocalFileSystemURL": false
+    }
+}

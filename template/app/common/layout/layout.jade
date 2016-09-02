@@ -1,0 +1,17 @@
+//
+  Create apps with an icon and label, using the apps-positive style.
+  Each app's child <ion-nav-view> directive will have its own
+  navigation history that also transitions its views in and out.
+ion-tabs.tabs-icon-top.tabs-background-assertive.tabs-color-light
+    // Dashboard Tab
+    ion-tab(title='Tab 1', icon-off='ion-android-star-outline', icon-on='ion-android-star', href='#/app/tab1')
+        ion-nav-view(name='app-tab1')
+    // Comics Tab
+    ion-tab(title='Tab 2', icon-off='ion-ios-book-outline', icon-on='ion-ios-book', href='#/app/tab2')
+        ion-nav-view(name='app-tab2')
+    // Favourites Tab
+    ion-tab(title='Tab 3', icon-off='ion-android-favorite-outline', icon-on='ion-android-favorite', href='#/app/tab3')
+        ion-nav-view(name='app-tab3')
+    // Account Tab
+    ion-tab(title='Settings', icon-off='ion-ios-gear-outline', icon-on='ion-ios-gear', href='#/app/settings')
+        ion-nav-view(name='app-settings')

@@ -1,0 +1,8 @@
+{
+  "name": "jumpstart-ionicv1-tabs",
+  "version": "1.0.0",
+  "description": "Ionic v1 generator for OAB projects",
+  "author": "jdat82 <jean.dat@gmail.com>",
+  "license": "MIT",
+  "preferGlobal": true
+}

@@ -1,0 +1,10 @@
+ion-view.settings(view-title='Settings')
+    ion-content
+        ion-list
+            ion-toggle(ng-model='vm.settings.enableAnimations', toggle-class='toggle-positive')
+                | Enable animations
+            ion-toggle(ng-model='vm.settings.enableTracker', toggle-class='toggle-positive')
+                | Enable statistics
+            ion-item
+                button.button.button-assertive.button-small.button-block.settings__button(ng-click='vm.clearCache()')
+                    span(ng-bind="vm.clearing ? 'Clearing…' : 'Clear cache'")

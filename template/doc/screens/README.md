@@ -1,0 +1,1 @@
+Screen captures. May be used in play & app store forms or for the README or …

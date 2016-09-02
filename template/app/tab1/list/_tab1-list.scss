@@ -1,0 +1,16 @@
+.tab1{
+    .heroe{
+        &__content{
+            background-color: $media-background-color;
+        }
+        &__cover{
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            padding-top: 55%;
+        }
+        &__footer{
+            border-bottom: 1px solid #CCC !important;
+        }
+    }
+}
