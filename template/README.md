@@ -34,6 +34,19 @@
     - [--mock | --no-mock](#--mock----no-mock)
     - [--patterns <name>](#--patterns-name)
     - [--platform <name>](#--platform-name)
+  - [Instrument code based on context](#instrument-code-based-on-context)
+  - [Grunt tasks](#grunt-tasks)
+    - [`aliases.yaml`](#aliasesyaml)
+    - [`grunt/css.js`](#gruntcssjs)
+    - [`grunt/script.js`](#gruntscriptjs)
+    - [`grunt/template.js`](#grunttemplatejs)
+    - [`grunt/quality.js`](#gruntqualityjs)
+    - [`grunt/dist.js`](#gruntdistjs)
+    - [`grunt/doc.js`](#gruntdocjs)
+    - [`grunt/serve.js`](#gruntservejs)
+    - [`grunt/test.js`](#grunttestjs)
+    - [`grunt/assets.js`](#gruntassetsjs)
+    - [`grunt/common.js`](#gruntcommonjs)
 - [Serving changes](#serving-changes)
   - [In your browser](#in-your-browser)
   - [On device](#on-device)
@@ -46,6 +59,7 @@
   - [Default angular handler](#default-angular-handler)
 - [Splashscreen reflexions](#splashscreen-reflexions)
 - [Release process](#release-process)
+- [Known bugs](#known-bugs)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
