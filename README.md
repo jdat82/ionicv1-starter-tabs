@@ -3,7 +3,7 @@
 This is a ready-to-use skeleton project for IONIC v1 based on the work done for [this demo app](https://github.com/jdat82/learning-ionic).
 
 See this [README](https://github.com/jdat82/jumpstart-ionicv1-tabs/blob/master/template/README.md) file for a better understanding of what 
-it can do for you.
+it can do for you and how to use it once generated.
 
 # How to proceed ?
 
@@ -26,7 +26,10 @@ jumpstart <your_path> ionicv1-tabs
 
 You will be prompt a few questions like your app name, bundle id and version.
 
-Then go in the generated project to start using it. I strongly recommend to read the included [README](https://github.com/jdat82/jumpstart-ionicv1-tabs/blob/master/template/README.md) in order to understand everything this starter kit has to offer. 
+Then go in the generated project to start using it. 
+
+I strongly recommend to read the included [README](https://github.com/jdat82/jumpstart-ionicv1-tabs/blob/master/template/README.md) in order to understand everything this starter kit has to offer. 
+
 It contains also a list of prerequisites for novices and explain how to start using it.
 
 
